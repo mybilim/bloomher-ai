@@ -1,17 +1,15 @@
 export default function Sidebar(){
 
 return(
-
-<nav className="border-r p-5 space-y-3">
+<nav className="p-5 border">
 
 <p>Dashboard</p>
-<p>Period</p>
-<p>Health</p>
-<p>AI Assistant</p>
 <p>Profile</p>
+<p>Period</p>
+<p>Nutrition</p>
+<p>AI Assistant</p>
 
 </nav>
-
 )
 
 }

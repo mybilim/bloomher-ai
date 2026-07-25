@@ -1,22 +1,26 @@
-"use client";
-
-import useAuth from "@/hooks/useAuth";
+import DashboardCard from "@/components/dashboard/DashboardCard";
 
 export default function Dashboard(){
 
- const {user}=useAuth();
+return(
+<main className="p-10 grid gap-5">
 
- return(
-  <main className="p-10">
-    <h1 className="text-3xl font-bold">
-      BloomHer Dashboard
-    </h1>
+<DashboardCard
+title="Health Score"
+value="85%"
+/>
 
-    <p>
-      Welcome {user?.email || "User"}
-    </p>
+<DashboardCard
+title="Cycle"
+value="28 days"
+/>
 
-  </main>
- );
+<DashboardCard
+title="Water"
+value="2L"
+/>
+
+</main>
+)
 
 }
