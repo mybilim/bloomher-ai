@@ -1,9 +1,8 @@
 export default function ProfileCard(){
-
 return(
 <div>
-User Profile
+<h2>User Profile</h2>
+<p>Health information</p>
 </div>
 )
-
 }
