@@ -1,19 +1,21 @@
-import {NextResponse} from "next/server";
+import {
+generateAIResponse
+}
+from "@/lib/ai/engine";
 
 
 export async function POST(
-request:Request
+req:Request
 ){
 
-const body =
-await request.json();
+const body=
+await req.json();
 
 
-return NextResponse.json({
-
-reply:
-`BloomHer AI processed: ${body.message}`
-
-});
+return Response.json(
+generateAIResponse(
+body.message
+)
+);
 
 }
