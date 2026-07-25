@@ -1,9 +1,8 @@
-export interface UserProfile {
-  uid: string;
-  name: string;
-  email: string;
-  age?: number;
-  avatar?: string;
-  createdAt?: Date;
-  updatedAt?: Date;
+export interface Profile {
+ uid:string;
+ name:string;
+ email:string;
+ age?:number;
+ gender?:string;
+ avatar?:string;
 }

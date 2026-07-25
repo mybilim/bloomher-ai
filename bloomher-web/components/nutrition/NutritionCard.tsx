@@ -1,7 +1,7 @@
-export default function ReportCard(){
+export default function NutritionCard(){
 return(
 <div className="border rounded-xl p-6">
-Health Reports
+Nutrition Planner
 </div>
 )
 }

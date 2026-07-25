@@ -1,7 +1,7 @@
-export default function ReportCard(){
+export default function Calendar(){
 return(
 <div className="border rounded-xl p-6">
-Health Reports
+Period Calendar
 </div>
 )
 }
