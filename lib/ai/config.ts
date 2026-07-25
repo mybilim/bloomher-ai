@@ -1,4 +1,11 @@
-export const AI_CONFIG = {
- provider:"openai",
- model:"gpt-5-mini"
+export const AI_SETTINGS={
+
+defaultProvider:"openai",
+
+availableProviders:[
+"openai",
+"gemini"
+]
+
 };
+
